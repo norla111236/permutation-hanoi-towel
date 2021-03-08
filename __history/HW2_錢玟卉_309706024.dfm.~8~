@@ -1,0 +1,196 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 411
+  ClientWidth = 707
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Splitter1: TSplitter
+    Left = 185
+    Top = 0
+    Height = 411
+    ExplicitLeft = 488
+    ExplicitTop = 256
+    ExplicitHeight = 100
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 185
+    Height = 411
+    Align = alLeft
+    Caption = 'Panel1'
+    TabOrder = 0
+    ExplicitLeft = 40
+    ExplicitTop = 176
+    ExplicitHeight = 41
+    object PageControl2: TPageControl
+      Left = 1
+      Top = 1
+      Width = 183
+      Height = 312
+      ActivePage = permutation_ABC
+      Align = alTop
+      TabOrder = 0
+      object permutation_ABC: TTabSheet
+        Caption = 'permutation_ABC'
+        object Label1: TLabel
+          Left = 16
+          Top = 24
+          Width = 19
+          Height = 13
+          Caption = 'k = '
+        end
+        object Label2: TLabel
+          Left = 16
+          Top = 80
+          Width = 20
+          Height = 13
+          Caption = 'n = '
+        end
+        object Label3: TLabel
+          Left = 80
+          Top = 136
+          Width = 45
+          Height = 13
+          Caption = '(n < = 9)'
+        end
+        object Button1: TButton
+          Left = 24
+          Top = 176
+          Width = 129
+          Height = 49
+          Caption = 'Permutations'
+          TabOrder = 0
+        end
+        object Edit1: TEdit
+          Left = 56
+          Top = 24
+          Width = 97
+          Height = 25
+          TabOrder = 1
+          Text = 'Edit1'
+        end
+        object Edit2: TEdit
+          Left = 48
+          Top = 80
+          Width = 121
+          Height = 21
+          TabOrder = 2
+          Text = 'Edit2'
+        end
+      end
+      object Hanoi: TTabSheet
+        Caption = 'Hanoi'
+        ImageIndex = 1
+        object Label4: TLabel
+          Left = 32
+          Top = 16
+          Width = 84
+          Height = 13
+          Caption = 'Nunber of disks : '
+        end
+        object Label5: TLabel
+          Left = 16
+          Top = 192
+          Width = 31
+          Height = 13
+          Caption = 'Label5'
+        end
+        object Edit3: TEdit
+          Left = 56
+          Top = 64
+          Width = 97
+          Height = 21
+          TabOrder = 0
+          Text = 'Edit3'
+        end
+        object Button2: TButton
+          Left = 32
+          Top = 128
+          Width = 113
+          Height = 49
+          Caption = 'Tower of Hanoi'
+          TabOrder = 1
+          OnClick = Button2Click
+        end
+        object Panel2: TPanel
+          Left = 0
+          Top = 183
+          Width = 175
+          Height = 101
+          Align = alBottom
+          TabOrder = 2
+        end
+      end
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 188
+    Top = 0
+    Width = 519
+    Height = 411
+    ActivePage = permutations
+    Align = alClient
+    TabOrder = 1
+    object permutations: TTabSheet
+      Caption = 'permutations'
+      object Memo1: TMemo
+        Left = 0
+        Top = 0
+        Width = 511
+        Height = 383
+        Align = alClient
+        Lines.Strings = (
+          'Memo1')
+        TabOrder = 0
+        ExplicitLeft = 326
+        ExplicitTop = 240
+        ExplicitWidth = 185
+        ExplicitHeight = 89
+      end
+    end
+    object permutations_with_tracing: TTabSheet
+      Caption = 'permutations_with_tracing'
+      ImageIndex = 1
+      object Memo2: TMemo
+        Left = 0
+        Top = 0
+        Width = 511
+        Height = 383
+        Align = alClient
+        Lines.Strings = (
+          'Memo2')
+        TabOrder = 0
+        ExplicitLeft = 188
+        ExplicitWidth = 519
+        ExplicitHeight = 411
+      end
+    end
+    object Tower_of_hanoi: TTabSheet
+      Caption = 'Tower_of_hanoi'
+      ImageIndex = 2
+      object Memo3: TMemo
+        Left = 0
+        Top = 0
+        Width = 511
+        Height = 383
+        Align = alClient
+        Lines.Strings = (
+          'Memo3')
+        TabOrder = 0
+        ExplicitLeft = 188
+        ExplicitWidth = 519
+        ExplicitHeight = 411
+      end
+    end
+  end
+end
